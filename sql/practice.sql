@@ -54,5 +54,39 @@ VALUES(
     'short_listed'
 );
 
+ALTER TABLE job_applied
+ADD contact VARCHAR(50);
+
+UPDATE job_applied
+SET contact = 'Sphelele Khumalo'
+WHERE jib_id = 01;
+
+UPDATE job_applied
+SET contact = 'Syabonga Khumalo'
+WHERE jib_id = 02;
+
+UPDATE job_applied
+SET contact = 'Sipho Hadebe'
+WHERE jib_id = 03;
+
+UPDATE job_applied
+SET contact = 'Velenkosini Nkosi'
+WHERE jib_id = 04;
+
+ALTER TABLE job_applied
+RENAME COLUMN jib_id TO job_id;
+
+ALTER TABLE job_applied
+RENAME COLUMN contact TO contact_name;
+
 SELECT*
 FROM job_applied;
+
+ALTER TABLE job_applied
+ALTER COLUMN contact_name TYPE TEXT;
+
+ALTER TABLE job_applied
+DROP COLUMN contact_name;
+
+DROP TABLE job_applied;
+
