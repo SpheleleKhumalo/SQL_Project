@@ -23,3 +23,30 @@ GROUP BY
 ORDER BY
     demand_count DESC
 LIMIT 5
+
+/*
+Results:
+
+[
+  {
+    "skills": "sql",
+    "demand_count": "2255"
+  },
+  {
+    "skills": "python",
+    "demand_count": "1871"
+  },
+  {
+    "skills": "sas",
+    "demand_count": "932"
+  },
+  {
+    "skills": "r",
+    "demand_count": "892"
+  },
+  {
+    "skills": "aws",
+    "demand_count": "807"
+  }
+]
+*/

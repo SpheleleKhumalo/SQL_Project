@@ -25,3 +25,50 @@ GROUP BY
 ORDER BY
     average_salary DESC
 LIMIT 10
+
+/*
+Results:
+
+[
+  {
+    "skills": "cognos",
+    "average_salary": "157500.00"
+  },
+  {
+    "skills": "oracle",
+    "average_salary": "150007.00"
+  },
+  {
+    "skills": "sass",
+    "average_salary": "147500.00"
+  },
+  {
+    "skills": "hadoop",
+    "average_salary": "140298.20"
+  },
+  {
+    "skills": "matlab",
+    "average_salary": "136008.00"
+  },
+  {
+    "skills": "databricks",
+    "average_salary": "124891.67"
+  },
+  {
+    "skills": "git",
+    "average_salary": "116750.00"
+  },
+  {
+    "skills": "spark",
+    "average_salary": "116585.07"
+  },
+  {
+    "skills": "azure",
+    "average_salary": "111675.00"
+  },
+  {
+    "skills": "nosql",
+    "average_salary": "111175.00"
+  }
+]
+*/
